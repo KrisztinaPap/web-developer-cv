@@ -15,11 +15,11 @@
 		<link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro" rel="stylesheet">
 
 	<body>
-		<div class="container-fluid">
+		<div class="container-fluid ">
 <!-- // Header ---------------------------->
 			<header role="banner">
 	<!-- // In-site Navigation ---------------------------->
-				<nav role="navigation">
+				<nav class="navbar bg-dark justify-content-around d-flex" role="navigation">
 					<ul>
 						<li><a href="#about">About Me</a></li>
 						<li><a href="#skills">Skills</a></li>
@@ -27,31 +27,46 @@
 						<li><a href="#testimonials">Testimonials</a></li>
 						<li><a href="#faqs">FAQs</a></li>
 						<li><a href="#contact">Contact</a></li>
-					</ul>
-				</nav>
+					</ul><!--end of in-site navigation list-->
+				</nav><!--end of in-site navigation element-->
 	<!-- // Home Section ---------------------------->
 				<main role="main">
 					<section>
 
 						<!-- // Profile image still missing (flexbox?)-->
-						<header id="about">
+						<header class="pt-4 mx-auto" id="about">
+
 							<h1>Krisztina Pap</h1>
 							<h2>About Me</h2>
-						</header>
-							<p>Wlecome to my resume! My name is Krisztina and I'm a self-taught web developer looking for a fullfilling and challenging job with an awesome company like yours!</p>
-							<p>Scrolling through this page I built using HTML5, CSS3, and JavaScript from scratch; I offer you a glimpse into my skills, education, and hopefully, my personality.</p>
-							<p>Enjoy your stay and I invite you to get in touch with me using the <a ref="#contact">Contact form</a>!
 
+						</header><!--end of about header-->
+						<div class="row">
+							<div class="col-md-4">
+								<img src="images\Krisztina_profile.JPG" class="img-thumbnail rounded-circle float-right" alt="Profile picture">
+							</div>
+							<div class="col-md-8">
+								<p>Welcome to my resume! My name is Krisztina and I'm a self-taught web developer looking for a fullfilling and challenging job with an awesome company like yours! Scrolling through this page I built using HTML5, CSS3, and JavaScript from scratch; I offer you a glimpse into my skills, education, and hopefully, my personality. Enjoy your stay and I invite you to get in touch with me using the <a ref="#contact">Contact form</a>!
+								<div class="container">
+									<div class="d-flex flex-sm-column flex-md-row justify-content-around">
+										<button type="button" class="btn btn-info btn-lg">Skills</button>
+										<button type="button" class="btn btn-danger btn-lg">Education</button>
+										<button type="button" class="btn btn-warning btn-lg">Testimonials</button>
+										<button type="button" class="btn btn-success btn-lg">FAQs</button>
+										<button type="button" class="btn btn-primary btn-lg">Contact</button>
+									</div>
+								</div>
+							</div>
+						</div><!--end of row-->
 						<!-- // Download resume button still missing -->
 						<!-- // Search button still missing: ADD role="search" -->
-					</section>
-			</header>
+					</section><!--end of main section-->
+			</header><!--end of body header and banner role-->
 
 	<!-- // Skill Sets Section (with nav?) -->
-				<section class="container-fluid" id="skills">
+				<section class="container-fluid pt-4 bg-secondary text-light" id="skills">
 					<h2>Skills</h2>
 					<div class="row">
-						<article class="col-lg-4">
+						<article class="col-md-6">
 							<h3>Web Development</h3>
 								<ul>
 										<li>HTML</li>
@@ -59,10 +74,30 @@
 										<li>JavaScript</li>
 										<li>Bootstrap</li>
 										<li>Responsive Design</li>
+										<li>WordPress</li>
 										<li>Atom/Node.js/DreamWeaver</li>
-								</ul>
-						</article>
-						<article class="col-lg-4">
+										<li>Git/GitHub</li>
+								</ul><!--end of web development skills list-->
+								<h3>Bonus Skills</h3>
+									<ul>
+										<li><h4>Educational/Training Background</h4></li>
+											<ul>
+												<li>Attention to detail (Professional Pride)</li>
+												<li>Able to present complex concepts/content in an organized and clear manner</li>
+												<li>User-focused mindset</li>
+											</ul><!--end ofeducational/training background skills list-->
+										<li><h4>Experienced Collaborator</h4></li>
+											<ul>
+												<li>Discord</li>
+												<li>Slack</li>
+												<li>Skype</li>
+												<li>Zoom</li>
+												<li>GitHub</li>
+											</ul><!--end of collaboration skills list-->
+											<li><h4>Remote Working Experience (5+ yrs)</h4></li>
+									</ul><!--end of Other Skills list-->
+						</article><!--end of web development skills article-->
+						<article class="col-md-6">
 							<h3>Design</h3>
 								<ul>
 									<li><h4>Graphic Design</h4></li>
@@ -72,7 +107,7 @@
 											<li>Logo and Identity Design</li>
 											<li>Adobe Illustrator</li>
 											<li>Adobe Spark Post</li>
-										</ul>
+										</ul><!--end of graphic design skills list-->
 									<li><h4>User Experience (UX)/User Interface (UI) Design</h4></li>
 										<ul>
 											<li>User Research and Testing</li>
@@ -81,44 +116,26 @@
 											<li>Accessibility/Usability</li>
 											<li>Adobe XD</li>
 											<li>Sketch</li>
-										</ul>
+										</ul><!--end of UX/UI design skills list-->
 									<li><h4>Instructional Design</h4></li>
 										<ul>
 											<li>Adobe Captivate</li>
 											<li>Articulate Storyline</li>
 											<li>Moodle</li>
-										</ul>
+										</ul><!--end of instructional design skills list-->
 									<li><h4>Adobe Creative Cloud</h4></li>
 										<ul>
 											<li>Spark</li>
 											<li>PhotoShop</li>
 											<li>InDesign</li>
 											<li>Illustrator</li>
-										</ul>
-								</ul>
-						</article>
-						<article class="col-lg-4">
-							<h3>Other Skills</h3>
-								<ul>
-									<li><h4>Remote Working Experience (5+ yrs)</h4></li>
-									<li><h4>Educational/Training Background</h4></li>
-										<ul>
-											<li>Attention to detail (Professional Pride)</li>
-											<li>Able to present complex concepts/content in an organized and clear manner</li>
-											<li>User-focused mindset</li>
-										</ul>
-									<li><h4>Collaboration</h4></li>
-										<ul>
-											<li>Discord</li>
-											<li>Slack</li>
-											<li>GitHub</li>
-										</ul>
-								</ul>
-						</article>
-					</div>
-				</section>
+										</ul><!--end of Adobe CC skills list-->
+								</ul><!--end of design skills lists-->
+						</article><!--end of design skills article-->
+					</div><!--end of row (skills container)-->
+				</section><!--end of skills section-->
 	<!-- // Education section -->
-				<section class="container-fluid" id="education">
+				<section class="container-fluid pt-4" id="education">
 					<h2>Education</h2>
 					<!-- // Education - formal -->
 					<div class="text-center">
@@ -129,14 +146,17 @@
 
 						<h4>Investigations and Risk Management Diploma</h4>
 						<p>MacEwan University - Edmonton, AB</p>
-					</div>
+					</div><!--end of formal education-->
 
 					<!-- // Education - certifications and additional course work -->
-						<section class="container-fluid" id="certifications">
-							<h3>Certifications and Additional Course Work</h3>
+						<section class="container-fluid bg-secondary text-light pt-4" id="certifications">
+							<h3>Certifications and Additional Course Work
+								<small class="text-white-50">Completed on Lynda.com by LinkedIn</small>
+							</h3>
+
 							<div class="row">
 								<article class="col-lg-4 col-md-6">
-									<h4>Front-End Web Developer Certificate (Lynda.com by LinkedIn)</h4>
+									<h4>Front-End Web Developer Certificate</h4>
 										<ul>
 											<li>User Experience for Web Designers</li>
 											<li>UX Foundations: Accessbility</li>
@@ -146,48 +166,48 @@
 											<li>Bootstrap 4 Essential Training</li>
 											<li>Sass Essential Training</li>
 											<li>Learning React.js</li>
-										</ul>
-								</article>
+										</ul><!--end of front-end web developer certificate courses-->
+								</article><!--end of front-end web developer certificate courses-->
 								<article class="col-lg-4 col-md-6">
-									<h4>Web Developer Certificate (Lynda.com by LinkedIn)</h4>
+									<h4>Web Developer Certificate</h4>
 										<ul>
 											<li>HTML Essential Training</li>
 											<li>CSS Essential Trailing</li>
 											<li>JavaScript Essential Training</li>
 											<li>Git Essential Training</li>
 											<li>Workflow Tools for Web Developers</li>
-										</ul>
-								</article>
+										</ul><!--end of web developer certificate courses-->
+								</article><!--end of web developer certificate courses-->
 								<article class="col-lg-4 col-md-6">
-									<h4>User Experience Designer Certificate (Lynda.com by LinkedIn)</h4>
+									<h4>User Experience Designer Certificate</h4>
 										<ul>
 											<li>Analyzing User Data</li>
 											<li>Creating Personas</li>
 											<li>Prototyping</li>
 											<li>Multidevice Design</li>
 											<li>Sketch, Photoshop, and Illustrator for UX Design</li>
-										</ul>
-								</article>
+										</ul><!--end of user experience designer certificate courses-->
+								</article><!--end of user experience designer certificate courses-->
 								<article class="col-lg-4 col-md-6">
-									<h4>Advance Your Skills in UX Design Certificate (Lynda.com by LinkedIn)</h4>
+									<h4>Advance Your Skills in UX Design Certificate</h4>
 										<ul>
 											<li>Sketch, InVision, Adobe XD, and Illustrator for UX Design</li>
 											<li>Hands-On Mobile Prototyping for UX Designers</li>
 											<li>Sketch: Mobile Design Workflows</li>
-										</ul>
-								</article>
+										</ul><!--end of advance your skills in UX design certificate courses-->
+								</article><!--end of advance your skills in UX design certificate courses-->
 								<article class="col-lg-4 col-md-6">
-									<h4>Graphic Designer Certificate (Lynda.com by LinkedIn)</h4>
+									<h4>Graphic Designer Certificate</h4>
 										<ul>
 											<li>Foundations: Layout and Composition</li>
 											<li>Foundations: Typography</li>
 											<li>Color for Design and Art</li>
 											<li>Learning Logo Design</li>
 											<li>Intro courses to InDesign, Illustrator, and Photoshop</li>
-										</ul>
-								</article>
+										</ul><!--end of graphic designer certificate courses-->
+								</article><!--end of graphic designer certificate courses-->
 								<article class="col-lg-4 col-md-6">
-									<h4>Additional Courses (Lynda.com by LinkedIn)</h4>
+									<h4>Additional Courses</h4>
 										<ul>
 											<li>WordPress 5 Essential Training</li>
 											<li>Programming Foundations: Databases</li>
@@ -201,43 +221,43 @@
 											<li>Photoshop CC 2018 Essential Training</li>
 											<li>Wacom Essential Training</li>
 											<li>Developing a Design System with Adobe XD</li>
-										</ul>
-								</article>
-						</div>
-				</section>
-			</main>
-			<section class="container-fluid" id="testimonials">
+										</ul><!--end of additional courses-->
+								</article><!--end of additional courses-->
+						</div><!--end of row (certifications container)-->
+				</section><!--end of certifications container-->
+			</main><!--end of main section-->
+			<section class="container-fluid pt-4" id="testimonials">
 					<h2>Testimonials</h2>
 						<blockquote class="blockquote text-center">
 								<p class="mb-0">Krisztina was a dedicated and effective member of our team. Her skill sets and vision for our online training program was both refreshing and challenging. Her ability to take a complex initiative and make it both user friendly and easy to understand was very impressive.</p>
 								<footer class="blockquote-footer">Kirk Reiniger, <cite title="Source Title">VP Sales & Marketing at J. Ennis Fabrics</cite></footer>
-						</blockquote>
+						</blockquote><!--end of 1st blockquote-->
 
 						<blockquote class="blockquote text-center">
 								<p class="mb-0">Krisztina was directly responsible for my training in several areas. She was articulate, organized, helpful and an excellent lead for the projects we worked together on.
 								Her teamwork skills make her easy to work with, and her style of training was thorough and clear. I seldom needed to return to her for clarification on any subject matter. </p>
 								<footer class="blockquote-footer">Emily Ironside, <cite title="Source Title">Writer/Editor at Alberta Agriculture and Forestry</cite></footer>
-						</blockquote>
-			</section>
-			<section role="form">
+						</blockquote><!--end of 2nd blockquote-->
+			</section><!--end of testimonials section-->
+			<section class="bg-secondary text-light pt-4" role="form">
 					<h2>This is where the contact form goes</h2>
-			</section>
+			</section><!--end of form section-->
 			<section class="container-fluid" id="faqs">
 	<!-- // FAQs: Randomly asked interview questions, answered -->
-			</section>
+</section><!--end of faqs section-->
 			<aside class="container-fluid" id="randomfacts">
 	<!-- // FAQs: Random facts about me will be cycling through on the right side -->
-			</aside>
+</aside><!--end of randomfacts section-->
 	<!-- // Footer - Contact - copyrights -->
-			<footer class="container-fluid" role="contentinfo">
+			<footer class="container-fluid pt-4 bg-dark text-light" role="contentinfo">
 				<address>
 					<p>Copyright 2019 by Krisztina Pap</p>
-				</address>
-			</footer>
-		</div>
+				</address><!--end of copyrights section-->
+			</footer><!--end of document footer-->
+		</div><!--end of body container-->
 			<script src="js/script.js" defer></script>
 			<script src="js/jquery.min.js"></script>
 			<script src="js/popper.js"></script>
 			<script src="js/bootstrap.min.js"></script>
-	</body>
-</html>
+	</body><!--end of body section-->
+</html><!--end of document-->

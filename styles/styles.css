@@ -21,6 +21,8 @@ html {
 
 h1, h2, h3 {
   text-align: center;
+  padding-bottom: 40px;
+  text-transform: uppercase;
 }
 
 /* Navigation
