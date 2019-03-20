@@ -5,8 +5,8 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Krisztina Pap | Resume</title>
-		<link rel="stylesheet" href="styles/styles.css">
 		<link rel="stylesheet" href="styles/bootstrap.min.css">
+		<link rel="stylesheet" href="styles/styles.css">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -14,40 +14,58 @@
 		<link href="https://fonts.googleapis.com/css?family=Merienda:700" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro" rel="stylesheet">
 
-	<body>
-		<div class="container-fluid ">
+	<body class="container">
+		<div class="container-fluid">
 <!-- // Header ---------------------------->
 			<header role="banner">
 	<!-- // In-site Navigation ---------------------------->
-				<nav class="navbar bg-dark justify-content-around d-flex" role="navigation">
-					<ul>
-						<li><a href="#about">About Me</a></li>
-						<li><a href="#skills">Skills</a></li>
-						<li><a href="#education">Education</a></li>
-						<li><a href="#testimonials">Testimonials</a></li>
-						<li><a href="#faqs">FAQs</a></li>
-						<li><a href="#contact">Contact</a></li>
-					</ul><!--end of in-site navigation list-->
-				</nav><!--end of in-site navigation element-->
+					<nav class="navbar bg-dark navbar-dark navbar-expand-md fixed-top" role="navigation">
+						<div class="container">
+
+							<div class="navbar-brand d-none d-sm-inline-block">Krisztina Pap</div>
+
+							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myTogglerNav" aria-controls="myTogglerNav" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+							</button>
+
+							<div class="collapse navbar-collapse" id="myTogglerNav">	<!--hamburger menu-->
+								<div class="navbar-nav ml-sm-auto">
+									<a class="nav-item nav-link active" href="#home">Home</a>
+									<a class="nav-item nav-link" href="#skills">Skills</a>
+									<a class="nav-item nav-link" href="#education">Education</a>
+									<a class="nav-item nav-link" href="#testimonials">Testimonials</a>
+									<a class="nav-item nav-link" href="#faqs">FAQs</a>
+									<a class="nav-item nav-link" href="#contact">Contact</a>
+								</div><!--navbar-nav-->
+							</div><!--hamburger menu-->
+
+							<form class="nav-item form-inline">
+								<input class="form-control mr-1" type="text" placeholder="Search">
+								<button class="btn btn-outline-light" type="submit">Go</button>
+							</form>
+						</div><!--container-->
+					</nav><!--end of in-site navigation element-->
 	<!-- // Home Section ---------------------------->
 				<main role="main">
 					<section>
+						<div class="container mt-5 mb-3 pt-3">
 
 						<!-- // Profile image still missing (flexbox?)-->
-						<header class="pt-4 mx-auto" id="about">
-
-							<h1>Krisztina Pap</h1>
-							<h2>About Me</h2>
+						<header id="home">
 
 						</header><!--end of about header-->
+
 						<div class="row">
+
 							<div class="col-md-4">
-								<img src="images\Krisztina_profile.JPG" class="img-thumbnail rounded-circle float-right" alt="Profile picture">
+								<img src="images\Krisztina_profile.png" class="img-thumbnail rounded-circle" style="max-width: 20vw" alt="Profile picture">
 							</div>
 							<div class="col-md-8">
+								<h1>Krisztina Pap</h1>
+								<h2>About Me</h2>
 								<p>Welcome to my resume! My name is Krisztina and I'm a self-taught web developer looking for a fullfilling and challenging job with an awesome company like yours! Scrolling through this page I built using HTML5, CSS3, and JavaScript from scratch; I offer you a glimpse into my skills, education, and hopefully, my personality. Enjoy your stay and I invite you to get in touch with me using the <a ref="#contact">Contact form</a>!
 								<div class="container">
-									<div class="d-flex flex-sm-column flex-md-row justify-content-around">
+									<div class="d-flex flex-column flex-md-row justify-content-around">
 										<button type="button" class="btn btn-info btn-lg">Skills</button>
 										<button type="button" class="btn btn-danger btn-lg">Education</button>
 										<button type="button" class="btn btn-warning btn-lg">Testimonials</button>
@@ -59,11 +77,12 @@
 						</div><!--end of row-->
 						<!-- // Download resume button still missing -->
 						<!-- // Search button still missing: ADD role="search" -->
+					</div><!--container-->
 					</section><!--end of main section-->
 			</header><!--end of body header and banner role-->
 
 	<!-- // Skill Sets Section (with nav?) -->
-				<section class="container-fluid pt-4 bg-secondary text-light" id="skills">
+				<section class="container-fluid pt-4 mb-3 bg-secondary text-light" id="skills">
 					<h2>Skills</h2>
 					<div class="row">
 						<article class="col-md-6">
@@ -135,7 +154,7 @@
 					</div><!--end of row (skills container)-->
 				</section><!--end of skills section-->
 	<!-- // Education section -->
-				<section class="container-fluid pt-4" id="education">
+				<section class="container-fluid pt-4 mb-3" id="education">
 					<h2>Education</h2>
 					<!-- // Education - formal -->
 					<div class="text-center">
@@ -149,7 +168,7 @@
 					</div><!--end of formal education-->
 
 					<!-- // Education - certifications and additional course work -->
-						<section class="container-fluid bg-secondary text-light pt-4" id="certifications">
+						<section class="container-fluid bg-secondary text-light pt-4 mb-3" id="certifications">
 							<h3>Certifications and Additional Course Work
 								<small class="text-white-50">Completed on Lynda.com by LinkedIn</small>
 							</h3>
@@ -226,7 +245,8 @@
 						</div><!--end of row (certifications container)-->
 				</section><!--end of certifications container-->
 			</main><!--end of main section-->
-			<section class="container-fluid pt-4" id="testimonials">
+			<section class="container-fluid pt-4 mb-3" id="testimonials">
+				<div class="container">
 					<h2>Testimonials</h2>
 						<blockquote class="blockquote text-center">
 								<p class="mb-0">Krisztina was a dedicated and effective member of our team. Her skill sets and vision for our online training program was both refreshing and challenging. Her ability to take a complex initiative and make it both user friendly and easy to understand was very impressive.</p>
@@ -238,26 +258,35 @@
 								Her teamwork skills make her easy to work with, and her style of training was thorough and clear. I seldom needed to return to her for clarification on any subject matter. </p>
 								<footer class="blockquote-footer">Emily Ironside, <cite title="Source Title">Writer/Editor at Alberta Agriculture and Forestry</cite></footer>
 						</blockquote><!--end of 2nd blockquote-->
+					</div><!--container-->
 			</section><!--end of testimonials section-->
-			<section class="bg-secondary text-light pt-4" role="form">
+			<section class="bg-secondary text-light pt-4 mb-3" role="form">
+				<div class="container">
 					<h2>This is where the contact form goes</h2>
+				</div><!--container-->
 			</section><!--end of form section-->
-			<section class="container-fluid" id="faqs">
+			<section class="container-fluid pt-4" id="faqs">
+				<div class="container">
+					<h2>This is where the FAQs go</h2>
+				</div><!--container-->
 	<!-- // FAQs: Randomly asked interview questions, answered -->
 </section><!--end of faqs section-->
-			<aside class="container-fluid" id="randomfacts">
-	<!-- // FAQs: Random facts about me will be cycling through on the right side -->
-</aside><!--end of randomfacts section-->
+		<aside class="container-fluid" id="randomfacts">
+<!-- // FAQs: Random facts about me will be cycling through on the right side -->
+		</aside><!--end of randomfacts section-->
 	<!-- // Footer - Contact - copyrights -->
-			<footer class="container-fluid pt-4 bg-dark text-light" role="contentinfo">
-				<address>
-					<p>Copyright 2019 by Krisztina Pap</p>
-				</address><!--end of copyrights section-->
-			</footer><!--end of document footer-->
-		</div><!--end of body container-->
+
+	<footer role="contentinfo">
+		<div class="container-fluid bg-dark text-light">
+			<address>
+				<p>Copyright 2019 by Krisztina Pap</p>
+			</address><!--end of copyrights section-->
+		</div><!--footer div-->
+	</footer><!--end of document footer-->
 			<script src="js/script.js" defer></script>
 			<script src="js/jquery.min.js"></script>
 			<script src="js/popper.js"></script>
 			<script src="js/bootstrap.min.js"></script>
+		</div><!--end of body container-->
 	</body><!--end of body section-->
 </html><!--end of document-->
