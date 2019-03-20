@@ -268,10 +268,10 @@
 
 			<section class="bg-secondary text-light pt-4 mb-3" role="form">
 				<div class="container">
-					<h2>Contact</h2>
+					<h2>Let's Connect!</h2>
 						<form>
 							<fieldset class="form-group">
-								<legend>Let's connect!</legend>
+								<legend>Your contact information:</legend>
 									<div class="form group">
 										<label class="form-control-label" for="yourName">* Name:</label>
 										<input class="form-control" type="text" id="yourName" placeholder="Your Name"</input>
@@ -282,9 +282,14 @@
 									</div><!--form group-->
 							</fieldset>
 							<fieldset class="form-group">
-								<legend>* Reason for reaching out:</legend>
+								<legend class="mb-0">* Your reason for reaching out to me:</legend>
+								<div class="form-group">
+									<label class="form-control-label" for="yourComments"></label>
+									<textarea class="form-control" id="yourComments" rows="4"></textarea>
+
+								</div><!--form group-->
 									<div class="form group">
-										<label class="form-control-label" for="recruiter">Are you a <a href="#" data-toggle="tooltip" data-trigger="hover" data-placement="top" title="Are you looking for talent for yourself or for your organization?">recruiter</a>?</label>
+										<label class="form-control-label" for="recruiter">* Are you a <a href="#" data-toggle="tooltip" data-trigger="hover" data-placement="top" title="Are you looking for talent for yourself or for your organization?">recruiter</a>?</label>
 											<div class="form-check">
 												<label class="form-check-label">
 													<input class="form-check-input" type="radio" name="recruiter" checked="yes" value="yes">Yes</input>
@@ -295,27 +300,76 @@
 													<input class="form-check-input" type="radio" name="recruiter" value="no">No</input>
 												</label>
 											</div><!--form check-->
-									</div><!--form group-->
-									<div class="form-group">
-										<label class="form-control-label" for="yourComments">Comments:</label>
-										<textarea class="form-control" id="yourComments" rows="4"></textarea>
 										<small class="d-block">Hover over blue keywords for additional information.</small>
 										<small class="d-block">Fields marked with * are required.</small>
 									</div><!--form group-->
+
 							</fieldset>
-							<button class="btn btn-primary" type"submit">Submit</button>
+							<button class="btn btn-primary mb-3" type"submit">Submit</button>
 						</form>
 
 				</div><!--container-->
 			</section><!--end of form section-->
 
+			<section id="faqs">
+				<div class="accordion" id="accordionExample">
+					<h2>Frequently Asked Questions</h2>
+					<p small text-muted>Click on a question to see the answer!</small></p>
+  				<div class="card">
+	    			<div class="card-header" id="questionOne">
+	      				<h2 class="mb-0">
+	    				<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#answerOne" aria-expanded="true" aria-controls="answerOne">
+	          			Do you have any remote working experience?
+	        			</button>
+	      				</h2>
+	    			</div>
 
+	    			<div id="answerOne" class="collapse" aria-labelledby="questionOne" data-parent="#accordionExample">
+		      			<div class="card-body">
+		        		Yes, I do!
+		      			</div>
+	    			</div>
+  				</div>
 
-			<section class="container-fluid pt-4" id="faqs">
-				<div class="container">
-					<h2>This is where the FAQs go</h2>	<!-- // FAQs: Randomly asked interview questions, answered -->
-				</div><!--container-->
+  				<div class="card">
+    				<div class="card-header" id="questionTwo">
+      					<h2 class="mb-0">
+				        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#answerTwo" aria-expanded="false" aria-controls="answerTwo">
+				        What languages do you speak?
+				        </button>
+      					</h2>
+    				</div>
+
+    				<div id="answerTwo" class="collapse" aria-labelledby="questionTwo" data-parent="#accordionExample">
+      					<div class="card-body">
+				        I speak English, Hungarian, and understand some German.
+						For computer languages, I am becoming quite familiar with HTML5, CSS3, and JavaScipt.
+				      	</div>
+    				</div>
+  				</div>
+
+  				<div class="card">
+    				<div class="card-header" id="questionThree">
+      					<h2 class="mb-0">
+				        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#answerThree" aria-expanded="false" aria-controls="answerThree">
+				        Do you have any hobbies?
+				        </button>
+      					</h2>
+    				</div>
+
+    				<div id="answerThree" class="collapse" aria-labelledby="questionThree" data-parent="#accordionExample">
+      					<div class="card-body">
+				        I have many hobbies! I love to hang out with my family, going on hikes, and love to read. I enjoy learning new things whether it's a new computer language or a different way to cook eggs, I'm in!
+				      	</div>
+    				</div>
+  				</div>
+				</div>
+			</div>
+			</div>
 			</section><!--end of faqs section-->
+
+
+
 			<aside class="container-fluid" id="randomfacts">
 				<!-- // FAQs: Random facts about me will be cycling through on the right side -->
 			</aside><!--end of randomfacts section-->
@@ -335,6 +389,9 @@
 			<script>
 				$(function() {
 					$('[data-toggle="tooltip"]').tooltip()
+				})
+				$(function() {
+					$('[data-toggle="collapse"]').collapse()
 				})
 			</script>
 
