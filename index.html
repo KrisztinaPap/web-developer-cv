@@ -35,18 +35,21 @@
 									<a class="nav-item nav-link" href="#education">Education</a>
 									<a class="nav-item nav-link" href="#testimonials">Testimonials</a>
 									<a class="nav-item nav-link" href="#faqs">FAQs</a>
-									<a class="nav-item nav-link" href="#contact">Contact</a>
+									<a class="nav-item nav-link mr-2" href="#contact">Contact</a>
 								</div><!--navbar-nav-->
 							</div><!--hamburger menu-->
-
-							<form class="nav-item form-inline">
-								<input class="form-control mr-1" type="text" placeholder="Search">
-								<button class="btn btn-outline-light" type="submit">Go</button>
-							</form>
+								<form class="nav-item form-inline">
+									<div class="input-group">
+										<input class="form-control" type="text" placeholder="Search">
+										<div class="input-group-append">
+											<button class="btn btn-outline-light" type="submit">Go</button>
+										</div><!--input-group-append button-->
+									</div><!--input-group for search-->
+								</form>
 						</div><!--container-->
 					</nav><!--end of in-site navigation element-->
 	<!-- // Home Section ---------------------------->
-				<main role="main">
+			<main role="main">
 					<section>
 						<div class="container mt-5 mb-3 pt-3">
 
@@ -81,7 +84,7 @@
 					</section><!--end of main section-->
 			</header><!--end of body header and banner role-->
 
-	<!-- // Skill Sets Section (with nav?) -->
+			<!-- // Skill Sets Section (with nav?) -->
 				<section class="container-fluid pt-4 mb-3 bg-secondary text-light" id="skills">
 					<h2>Skills</h2>
 					<div class="row">
@@ -153,7 +156,7 @@
 						</article><!--end of design skills article-->
 					</div><!--end of row (skills container)-->
 				</section><!--end of skills section-->
-	<!-- // Education section -->
+				<!-- // Education section -->
 				<section class="container-fluid pt-4 mb-3" id="education">
 					<h2>Education</h2>
 					<!-- // Education - formal -->
@@ -260,22 +263,62 @@
 						</blockquote><!--end of 2nd blockquote-->
 					</div><!--container-->
 			</section><!--end of testimonials section-->
+
+
+
 			<section class="bg-secondary text-light pt-4 mb-3" role="form">
 				<div class="container">
-					<h2>This is where the contact form goes</h2>
+					<h2>Contact</h2>
+						<form>
+							<fieldset class="form-group">
+								<legend>Let's connect!</legend>
+									<div class="form group">
+										<label class="form-control-label" for="yourName">Name:</label>
+										<input class="form-control" type="text" id="yourName" placeholder="Your Name"</input>
+									</div><!--form group-->
+									<div class="form group">
+										<label class="form-control-label" for="yourEmail">Email:</label>
+										<input class="form-control" type="text" id="yourEmail" placeholder="Your Email address"</input>
+									</div><!--form group-->
+							</fieldset>
+							<fieldset class="form-group">
+								<legend>Reason for reaching out:</legend>
+									<div class="form group">
+										<label class="form-control-label" for="recruiter">Are you a recruiter?</label>
+											<div class="form-check">
+												<label class="form-check-label">
+													<input class="form-check-input" type="radio" name="recruiter" checked="yes" value="yes">Yes</input>
+												</label>
+											</div><!--form check-->
+											<div class="form-check">
+												<label class="form-check-label">
+													<input class="form-check-input" type="radio" name="recruiter" value="no">No</input>
+												</label>
+											</div><!--form check-->
+									</div><!--form group-->
+									<div class="form-group">
+										<label class="form-control-label" for="yourComments">Comments:</label>
+										<textarea class="form-control" id="yourComments" rows="4"></textarea>
+									</div><!--form group-->
+							</fieldset>
+							<button class="btn btn-primary" type"submit">Submit</button>
+						</form>
+
 				</div><!--container-->
 			</section><!--end of form section-->
+
+
+
 			<section class="container-fluid pt-4" id="faqs">
 				<div class="container">
-					<h2>This is where the FAQs go</h2>
+					<h2>This is where the FAQs go</h2>	<!-- // FAQs: Randomly asked interview questions, answered -->
 				</div><!--container-->
-	<!-- // FAQs: Randomly asked interview questions, answered -->
-</section><!--end of faqs section-->
-		<aside class="container-fluid" id="randomfacts">
-<!-- // FAQs: Random facts about me will be cycling through on the right side -->
-		</aside><!--end of randomfacts section-->
+			</section><!--end of faqs section-->
+			<aside class="container-fluid" id="randomfacts">
+				<!-- // FAQs: Random facts about me will be cycling through on the right side -->
+			</aside><!--end of randomfacts section-->
 	<!-- // Footer - Contact - copyrights -->
-
+		</div><!--end of body container-->
 	<footer role="contentinfo">
 		<div class="container-fluid bg-dark text-light">
 			<address>
@@ -287,6 +330,6 @@
 			<script src="js/jquery.min.js"></script>
 			<script src="js/popper.js"></script>
 			<script src="js/bootstrap.min.js"></script>
-		</div><!--end of body container-->
+
 	</body><!--end of body section-->
 </html><!--end of document-->
