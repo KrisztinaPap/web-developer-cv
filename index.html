@@ -273,18 +273,18 @@
 							<fieldset class="form-group">
 								<legend>Let's connect!</legend>
 									<div class="form group">
-										<label class="form-control-label" for="yourName">Name:</label>
+										<label class="form-control-label" for="yourName">* Name:</label>
 										<input class="form-control" type="text" id="yourName" placeholder="Your Name"</input>
 									</div><!--form group-->
 									<div class="form group">
-										<label class="form-control-label" for="yourEmail">Email:</label>
+										<label class="form-control-label" for="yourEmail">* Email:</label>
 										<input class="form-control" type="text" id="yourEmail" placeholder="Your Email address"</input>
 									</div><!--form group-->
 							</fieldset>
 							<fieldset class="form-group">
-								<legend>Reason for reaching out:</legend>
+								<legend>* Reason for reaching out:</legend>
 									<div class="form group">
-										<label class="form-control-label" for="recruiter">Are you a recruiter?</label>
+										<label class="form-control-label" for="recruiter">Are you a <a href="#" data-toggle="tooltip" data-trigger="hover" data-placement="top" title="Are you looking for talent for yourself or for your organization?">recruiter</a>?</label>
 											<div class="form-check">
 												<label class="form-check-label">
 													<input class="form-check-input" type="radio" name="recruiter" checked="yes" value="yes">Yes</input>
@@ -299,6 +299,8 @@
 									<div class="form-group">
 										<label class="form-control-label" for="yourComments">Comments:</label>
 										<textarea class="form-control" id="yourComments" rows="4"></textarea>
+										<small class="d-block">Hover over blue keywords for additional information.</small>
+										<small class="d-block">Fields marked with * are required.</small>
 									</div><!--form group-->
 							</fieldset>
 							<button class="btn btn-primary" type"submit">Submit</button>
@@ -330,6 +332,11 @@
 			<script src="js/jquery.min.js"></script>
 			<script src="js/popper.js"></script>
 			<script src="js/bootstrap.min.js"></script>
+			<script>
+				$(function() {
+					$('[data-toggle="tooltip"]').tooltip()
+				})
+			</script>
 
 	</body><!--end of body section-->
 </html><!--end of document-->
