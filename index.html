@@ -14,12 +14,12 @@
 		<link href="https://fonts.googleapis.com/css?family=Merienda:700" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro" rel="stylesheet">
 
-	<body class="container">
+	<body class="container" data-spy="scroll" data-target="#navbar-site" data-offset="70">
 		<div class="container-fluid">
 <!-- // Header ---------------------------->
 			<header role="banner">
 	<!-- // In-site Navigation ---------------------------->
-					<nav class="navbar bg-dark navbar-dark navbar-expand-md fixed-top" role="navigation">
+					<nav id="navbar-site" class="navbar bg-dark navbar-dark navbar-expand-md fixed-top" role="navigation">
 						<div class="container">
 
 							<div class="navbar-brand d-none d-sm-inline-block">Krisztina Pap</div>
@@ -247,6 +247,48 @@
 								</article><!--end of additional courses-->
 						</div><!--end of row (certifications container)-->
 				</section><!--end of certifications container-->
+<!--Add skill-portfolio carousel-->
+				<div class="container carousel slide" id="portfolioCarousel" data-ride="carousel">
+					<ol class="carousel-indicators">
+					    <li data-target="#portfolioCarousel" data-slide-to="0" class="active"></li>
+					    <li data-target="#portfolioCarousel" data-slide-to="1"></li>
+					    <li data-target="#portfolioCarousel" data-slide-to="2"></li>
+						<li data-target="#portfolioCarousel" data-slide-to="3"></li>
+					</ol>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img class="img-fluid" src="images\carousel\Wire frames and prototypes.jpg" alt="Wire frames and prototypes"></img>
+							<div class="carousel-caption d-none d-md-block text-dark bg-light">
+								<h2>User Experience and User Interaction Design</h2>
+								<p>Wire frames and prototypes<p>
+							</div><!--end of carousel caption-->
+						</div><!--end of carousel item -->
+						<div class="carousel-item">
+							<img class="img-fluid" src="images\carousel\YouTube and Twitch assets.jpg" alt="YouTube and Twitch assets"></img>
+							<div class="carousel-caption d-none d-md-block text-dark bg-light">
+								<h2>Graphic Design</h2>
+								<p>YouTube, Twitch and other social media assets<p>
+							</div><!--end of carousel caption-->
+						</div><!--end of carousel item -->
+						<div class="carousel-item">
+							<img class="img-fluid" src="images\carousel\Code snippet.png" alt="Code snippet"></img>
+							<div class="carousel-caption d-none d-md-block text-dark bg-light">
+								<h2>Web Development</h2>
+								<p>HTML, CSS, JS, Bootstrap<p>
+							</div><!--end of carousel caption-->
+						</div><!--end of carousel item -->
+						<div class="carousel-item">
+							<img class="img-fluid" src="images\carousel\Code snippet.png" alt="Code snippet"></img>
+							<div class="carousel-caption d-none d-md-block text-dark bg-light">
+								<h2>Web Development</h2>
+								<p>HTML, CSS, JS, Bootstrap<p>
+							</div><!--end of carousel caption-->
+						</div><!--end of carousel item -->
+
+
+					</div><!--end of carousel-inner-->
+				</div><!--end of carousel container-->
+
 			</main><!--end of main section-->
 			<section class="container-fluid pt-4 mb-3" id="testimonials">
 				<div class="container">
@@ -264,9 +306,65 @@
 					</div><!--container-->
 			</section><!--end of testimonials section-->
 
+			<section id="faqs">
+				<div class="accordion" id="accordionExample">
+					<h2>Frequently Asked Questions</h2>
+					<p small text-muted>Click on a question to see the answer!</small></p>
+				<div class="card">
+					<div class="card-header" id="questionOne">
+						<h2 class="mb-0">
+						<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#answerOne" aria-expanded="true" aria-controls="answerOne">
+						Do you have any remote working experience?
+						</button>
+						</h2>
+					</div>
+
+					<div id="answerOne" class="collapse" aria-labelledby="questionOne" data-parent="#accordionExample">
+						<div class="card-body">
+						Yes, I do!
+						</div>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card-header" id="questionTwo">
+						<h2 class="mb-0">
+						<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#answerTwo" aria-expanded="false" aria-controls="answerTwo">
+						What languages do you speak?
+						</button>
+						</h2>
+					</div>
+
+					<div id="answerTwo" class="collapse" aria-labelledby="questionTwo" data-parent="#accordionExample">
+						<div class="card-body">
+						I speak English, Hungarian, and understand some German.
+						For computer languages, I am becoming quite familiar with HTML5, CSS3, and JavaScipt.
+						</div>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card-header" id="questionThree">
+						<h2 class="mb-0">
+						<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#answerThree" aria-expanded="false" aria-controls="answerThree">
+						Do you have any hobbies?
+						</button>
+						</h2>
+					</div>
+
+					<div id="answerThree" class="collapse" aria-labelledby="questionThree" data-parent="#accordionExample">
+						<div class="card-body">
+						I have many hobbies! I love to hang out with my family, going on hikes, and love to read. I enjoy learning new things whether it's a new computer language or a different way to cook eggs, I'm in!
+						</div>
+					</div>
+				</div>
+				</div>
+			</div>
+			</div>
+			</section><!--end of faqs section-->
 
 
-			<section class="bg-secondary text-light pt-4 mb-3" role="form">
+			<section id="contact" class="bg-secondary text-light pt-4 mb-3" role="form">
 				<div class="container">
 					<h2>Let's Connect!</h2>
 						<form>
@@ -311,62 +409,7 @@
 				</div><!--container-->
 			</section><!--end of form section-->
 
-			<section id="faqs">
-				<div class="accordion" id="accordionExample">
-					<h2>Frequently Asked Questions</h2>
-					<p small text-muted>Click on a question to see the answer!</small></p>
-  				<div class="card">
-	    			<div class="card-header" id="questionOne">
-	      				<h2 class="mb-0">
-	    				<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#answerOne" aria-expanded="true" aria-controls="answerOne">
-	          			Do you have any remote working experience?
-	        			</button>
-	      				</h2>
-	    			</div>
 
-	    			<div id="answerOne" class="collapse" aria-labelledby="questionOne" data-parent="#accordionExample">
-		      			<div class="card-body">
-		        		Yes, I do!
-		      			</div>
-	    			</div>
-  				</div>
-
-  				<div class="card">
-    				<div class="card-header" id="questionTwo">
-      					<h2 class="mb-0">
-				        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#answerTwo" aria-expanded="false" aria-controls="answerTwo">
-				        What languages do you speak?
-				        </button>
-      					</h2>
-    				</div>
-
-    				<div id="answerTwo" class="collapse" aria-labelledby="questionTwo" data-parent="#accordionExample">
-      					<div class="card-body">
-				        I speak English, Hungarian, and understand some German.
-						For computer languages, I am becoming quite familiar with HTML5, CSS3, and JavaScipt.
-				      	</div>
-    				</div>
-  				</div>
-
-  				<div class="card">
-    				<div class="card-header" id="questionThree">
-      					<h2 class="mb-0">
-				        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#answerThree" aria-expanded="false" aria-controls="answerThree">
-				        Do you have any hobbies?
-				        </button>
-      					</h2>
-    				</div>
-
-    				<div id="answerThree" class="collapse" aria-labelledby="questionThree" data-parent="#accordionExample">
-      					<div class="card-body">
-				        I have many hobbies! I love to hang out with my family, going on hikes, and love to read. I enjoy learning new things whether it's a new computer language or a different way to cook eggs, I'm in!
-				      	</div>
-    				</div>
-  				</div>
-				</div>
-			</div>
-			</div>
-			</section><!--end of faqs section-->
 
 
 
@@ -393,6 +436,28 @@
 				$(function() {
 					$('[data-toggle="collapse"]').collapse()
 				})
+			</script>
+			<script>
+			$(function() {
+				var topoffset = 70; //variable for menu height
+
+				//Use smooth scrolling when clicking on navigation
+				$('.navbar-nav a').click(function() {
+				if (location.pathname.replace(/^\//,'') ===
+				  this.pathname.replace(/^\//,'') &&
+				  location.hostname === this.hostname) {
+				  var target = $(this.hash);
+				  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+				  if (target.length) {
+					$('html,body').animate({
+					  scrollTop: target.offset().top-topoffset
+					}, 500);
+					return false;
+				  } //target.length
+				} //click function
+				}); //smooth scrolling
+
+				});
 			</script>
 
 	</body><!--end of body section-->
