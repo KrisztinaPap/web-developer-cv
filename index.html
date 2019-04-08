@@ -38,8 +38,8 @@
 									<a class="nav-item nav-link active" href="#home">Home</a>
 									<a class="nav-item nav-link" href="#skills">Skills</a>
 									<a class="nav-item nav-link" href="#carousel">Work Samples</a>
-									<a class="nav-item nav-link" href="#education">Education</a>
 									<a class="nav-item nav-link" href="#testimonials">Testimonials</a>
+									<a class="nav-item nav-link" href="#education">Education</a>
 									<a class="nav-item nav-link" href="#faqs">FAQs</a>
 								</div><!--navbar-nav-->
 							</div><!--hamburger menu-->
@@ -78,12 +78,11 @@
 					<!--second column in header-->
 					<div class="container pt-4 pb-3">
 							<div class="d-flex flex-column flex-md-row justify-content-around">
-								<button type="button" class="btn btn-info btn-lg">Skills</button>
-								<button type="button" class="btn btn-primary btn-lg">Work Samples</button>
-								<button type="button" class="btn btn-danger btn-lg">Education</button>
-								<button type="button" class="btn btn-warning btn-lg">Testimonials</button>
-								<button type="button" class="btn btn-success btn-lg">FAQs</button>
-								<!-- // Download CV button -->
+								<button type="button" class="btn btn-info btn-lg"><a href="#skills"> Skills</a></button>
+								<button type="button" class="btn btn-primary btn-lg"><a href="#carousel">Work Samples</a></button>
+								<button type="button" class="btn btn-warning btn-lg"><a href="#testimonials">Testimonials</a></button>
+								<button type="button" class="btn btn-danger btn-lg"><a href="#education">Education</a></button>	<button type="button" class="btn btn-success btn-lg"><a href="#faqs">FAQs</a></button>
+								
 								
 							</div>
 						</div>
@@ -154,11 +153,11 @@
 					<hr class="bg-light">
 						<h3>Experienced collaborator with 5 + years of remote work experience!</h3>
 							<div class="d-flex flex-column flex-md-row justify-content-around pt-3">
-								<button type="button" class="btn btn-info btn-lg">GitHub</button>
-								<button type="button" class="btn btn-danger btn-lg">Discord</button>
-								<button type="button" class="btn btn-warning btn-lg">Slack</button>
-								<button type="button" class="btn btn-success btn-lg">Zoom</button>
-								<button type="button" class="btn btn-primary btn-lg">Skype</button>
+								<button type="button" class="btn btn-info btn-lg"><a href="https://github.com/KrisztinaPap" target="_blank">GitHub</a></button>
+								<button type="button" class="btn btn-danger btn-lg"><a href="https://discordapp.com/" target="_blank">Discord</a></button>
+								<button type="button" class="btn btn-warning btn-lg"><a href="https://slack.com/" target="_blank">Slack</a></button>
+								<button type="button" class="btn btn-success btn-lg"><a href="https://zoom.us/" target="_blank">Zoom</a></button>
+								<button type="button" class="btn btn-primary btn-lg"><a href="https://www.skype.com/en/" target="_blank">Skype</a></button>
 							</div>
 						<hr class="bg-light">
 					</div>
@@ -236,6 +235,30 @@
 					</p>
 			</section>
 
+			<section class="container-fluid pt-4 mb-3" id="testimonials">
+					<div class="container">
+						<hr class="bg-dark">
+							<h2>Testimonials</h2>
+						<hr class="bg-dark">
+							<blockquote class="blockquote text-center">
+								<p class="mb-0">Krisztina was a dedicated and effective member of our team. Her skill sets and vision for our online training program was both refreshing and challenging. Her ability to take a complex initiative and make it both user friendly and easy to understand was very impressive.</p>
+								<footer class="blockquote-footer">Kirk Reiniger, <cite title="Source Title">VP Sales & Marketing at J. Ennis Fabrics</cite></footer>
+							</blockquote><!--end of 1st blockquote-->
+	
+							<blockquote class="blockquote text-center">
+								<p class="mb-0">Krisztina was directly responsible for my training in several areas. She was articulate, organized, helpful and an excellent lead for the projects we worked together on.
+								Her teamwork skills make her easy to work with, and her style of training was thorough and clear. I seldom needed to return to her for clarification on any subject matter. </p>
+								<footer class="blockquote-footer">Emily Ironside, <cite title="Source Title">Writer/Editor at Alberta Agriculture and Forestry</cite></footer>
+							</blockquote><!--end of 2nd blockquote-->
+						</div><!--container-->
+
+						<!--Button to visit my LinkedIn profile---------->
+						<div class="d-flex flex-column flex-md-row justify-content-around pt-3 pb-3">
+							<button id="MyLinkedIn" type="button"><a href="https://www.linkedin.com/in/krisztina-pap-415a3b2b/" class="btn btn-lg btn-success" target="_blank">My LinkedIn Profile</a></button>
+						</div>	
+
+				</section><!--end of testimonials section-->
+
 				<!-- // Education section -->
 				<section class="container-fluid pt-4 mb-3" id="education">
 					
@@ -253,6 +276,12 @@
 		
 								<h4>Investigations and Risk Management Diploma</h4>
 								<p class="pb-3">MacEwan University - Edmonton, AB</p>
+
+								<!--Button to visit MacEwan website--------------->
+								<div class="d-flex flex-column flex-md-row justify-content-around pt-3 pb-3">
+									<button id="MacEwan" type="button"><a href="https://www.macewan.ca/wcm/index.htm" class="btn btn-lg btn-warning" target="_blank">Visit MacEwan's Website</a></button>
+								</div>	
+
 							</div><!--end of formal education-->
 							<hr class="bg-light">
 								<h2>Certifications and Additional Course Work<br>
@@ -324,52 +353,42 @@
 											<li>UX Research Methods: Interviewing</li>
 											<li>Developing a Design System with Adobe XD</li>
 										</ul><!--end of additional courses-->
+
+										
 								</article><!--end of additional courses-->
+									
+								
 						</div><!--end of row (certifications container)-->
+						<!--Button to visit Lynda.com website--------------->
+						<div class="d-flex flex-column flex-md-row justify-content-around pt-3 pb-4">
+								<button id="Lynda" type="button"><a href="https://www.lynda.com/" class="btn btn-lg btn-warning" target="_blank">Visit Lynda.com Website</a></button>
+							</div>
 				</section><!--end of certifications container-->
 
 			
 
 
 			</main><!--end of main section-->
-			<section class="container-fluid pt-4 mb-3" id="testimonials">
-				<div class="container">
-					<hr class="bg-dark">
-						<h2>Testimonials</h2>
-					<hr class="bg-dark">
-						<blockquote class="blockquote text-center">
-							<p class="mb-0">Krisztina was a dedicated and effective member of our team. Her skill sets and vision for our online training program was both refreshing and challenging. Her ability to take a complex initiative and make it both user friendly and easy to understand was very impressive.</p>
-							<footer class="blockquote-footer">Kirk Reiniger, <cite title="Source Title">VP Sales & Marketing at J. Ennis Fabrics</cite></footer>
-						</blockquote><!--end of 1st blockquote-->
+			
 
-						<blockquote class="blockquote text-center">
-							<p class="mb-0">Krisztina was directly responsible for my training in several areas. She was articulate, organized, helpful and an excellent lead for the projects we worked together on.
-							Her teamwork skills make her easy to work with, and her style of training was thorough and clear. I seldom needed to return to her for clarification on any subject matter. </p>
-							<footer class="blockquote-footer">Emily Ironside, <cite title="Source Title">Writer/Editor at Alberta Agriculture and Forestry</cite></footer>
-						</blockquote><!--end of 2nd blockquote-->
-					</div><!--container-->
-			</section><!--end of testimonials section-->
-
-			<section id="faqs" class="container-fluid bg-secondary text-light pt-4 mb-4">
+			<section id="faqs" class="container-fluid pt-4 mb-4">
 				<div class="accordion" id="accordionExample">
-					<hr class="bg-light">
-						<h2>Frequently Asked Questions<br>
-							<small class="text-white-50">Click on a question to see the answer!</small>
-						</h2>
-					<hr class="bg-light">
+					<hr class="bg-dark">
+						<h2>Frequently Asked Questions</h2>
+					<hr class="bg-dark">
 					
 				<div class="card">
 					<div class="card-header" id="questionOne">
 						<h2 class="mb-0">
-						<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#answerOne" aria-expanded="true" aria-controls="answerOne">
-						Do you have any remote working experience?
+						<button class="accordionquestion btn btn-link" type="button" data-toggle="collapse" data-target="#answerOne" aria-expanded="true" aria-controls="answerOne">
+						What did you use to build this website?
 						</button>
 						</h2>
 					</div>
 
 					<div id="answerOne" class="collapse" aria-labelledby="questionOne" data-parent="#accordionExample">
 						<div class="card-body">
-						Yes, I do!
+						I built this website from scratch using HTML5, CSS3, JavaScript, and Bootstrap. I edited in Visual Studio Code and used Git/GitHub for version control. 
 						</div>
 					</div>
 				</div>
@@ -377,16 +396,15 @@
 				<div class="card">
 					<div class="card-header" id="questionTwo">
 						<h2 class="mb-0">
-						<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#answerTwo" aria-expanded="false" aria-controls="answerTwo">
-						What languages do you speak?
+						<button class="accordionquestion btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#answerTwo" aria-expanded="false" aria-controls="answerTwo">
+						What's your favorite game?
 						</button>
 						</h2>
 					</div>
 
 					<div id="answerTwo" class="collapse" aria-labelledby="questionTwo" data-parent="#accordionExample">
 						<div class="card-body">
-						I speak English, Hungarian, and understand some German.
-						For computer languages, I am becoming quite familiar with HTML5, CSS3, and JavaScipt.
+						I used to really enjoy World of Warcraft! I don't play much anymore but I still miss it some days...
 						</div>
 					</div>
 				</div>
@@ -394,7 +412,7 @@
 				<div class="card">
 					<div class="card-header" id="questionThree">
 						<h2 class="mb-0">
-						<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#answerThree" aria-expanded="false" aria-controls="answerThree">
+						<button class="accordionquestion btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#answerThree" aria-expanded="false" aria-controls="answerThree">
 						Do you have any hobbies?
 						</button>
 						</h2>
@@ -402,7 +420,7 @@
 
 					<div id="answerThree" class="collapse" aria-labelledby="questionThree" data-parent="#accordionExample">
 						<div class="card-body">
-						I have many hobbies! I love to hang out with my family, going on hikes, and love to read. I enjoy learning new things whether it's a new computer language or a different way to cook eggs, I'm in!
+						I have many hobbies! I love reading, hiking, and learning new things! Whether it's a new computer language or a different way to cook eggs, I'm in!
 						</div>
 					</div>
 				</div>
@@ -417,9 +435,17 @@
 		</div><!--end of body container-->
 
 	<footer role="contentinfo">
-		<div class="container-fluid bg-dark text-light">
+		<div id="footer" class="container-fluid bg-dark text-light flex-column flex-md-row pt-3 pb-4 ">
 			<address>
-				<p>Copyright 2019 by Krisztina Pap</p>
+					<div class="navbar-nav flex-md-row justify-content-around">
+						<div><a class="nav-item nav-link active" href="#home">Home</a></div>
+						<div><a class="nav-item nav-link" href="#skills">Skills</a></div>
+						<div><a class="nav-item nav-link" href="#carousel">Work Samples</a></div>
+						<div><a class="nav-item nav-link" href="#testimonials">Testimonials</a></div>
+						<div><a class="nav-item nav-link" href="#education">Education</a></div>
+						<div><a class="nav-item nav-link" href="#faqs">FAQs</a></div>
+					</div><!--navbar-nav-->
+					<p class="text-center text-muted">Copyright 2019 by Krisztina Pap</p>
 			</address><!--end of copyrights section-->
 		</div><!--footer div-->
 	</footer><!--end of document footer-->
